@@ -5,7 +5,11 @@ def setZeroes(matrix: List[List[int]]) -> None:
     """
     Do not return anything, modify matrix in-place instead.
     """
-    row = col = set()
+    # row = col = set()
+    # print(row is col)
+    row, col = set(), set()
+    print(row is col)
+
     h, w = len(matrix), len(matrix[0])
     for i in range(h):
         for j in range(w):
