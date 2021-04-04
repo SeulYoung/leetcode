@@ -25,7 +25,7 @@ class Solution:
             return 4
 
         dp0, dp1, dp2 = 1, 2, 4
-        for i in range(4, n + 1):
+        for _ in range(4, n + 1):
             dp0, dp1, dp2 = dp1, dp2, (dp0 + dp1 + dp2) % 1000000007
 
         return dp2
