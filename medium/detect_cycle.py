@@ -28,9 +28,3 @@ class Solution:
                     slow = slow.next
                 return slow
         return None
-
-
-l = ListNode(1)
-l.next = ListNode(2)
-s = Solution()
-s.detectCycle(l)
