@@ -35,10 +35,10 @@ class Solution:
         tail = m + n - 1
         while p1 >= 0 or p2 >= 0:
             if p1 == -1:
-                nums1[tail] = nums2[p2]
-                p2 -= 1
+                nums1[:tail + 1] = nums2[:p2 + 1]
+                break
             elif p2 == -1:
-                p1 = -1
+                break
             elif nums1[p1] > nums2[p2]:
                 nums1[tail] = nums1[p1]
                 p1 -= 1

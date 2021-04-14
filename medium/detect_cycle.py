@@ -23,7 +23,7 @@ class Solution:
             slow = slow.next
             if fast == slow:
                 p_head = head
-                while (p_head != slow):
+                while p_head != slow:
                     p_head = p_head.next
                     slow = slow.next
                 return slow
